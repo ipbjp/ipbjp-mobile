@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ipbjp_mobile/src/controllers/controller_social_network.dart';
 import 'package:ipbjp_mobile/src/widgets.dart';
 // import font awesome icons
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -19,6 +20,7 @@ class _MainScreen extends State<MainScreen> {
     SocialNetworks(),
     Donations(),
   ];
+  ControllerSocialNetwork controllerSocialNetwork = ControllerSocialNetwork();
 
   void _onItemTapped(int index) {
     setState(() {
@@ -26,8 +28,11 @@ class _MainScreen extends State<MainScreen> {
     });
   }
 
+  //init state
+
   @override
   Widget build(BuildContext context) {
+    controllerSocialNetwork.fetchSocialNetworks();
     return Scaffold(
       appBar: AppBar(
         title: const Text('IPB - Jardim da Penha'),
