@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ipbjp_mobile/main.dart';
 import 'package:ipbjp_mobile/widgets/my_home_page_state.dart';
-
-void main() {
-  runApp(const MyApp());
-}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
