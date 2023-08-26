@@ -15,7 +15,7 @@ class SocialNetworks extends StatefulWidget {
 class _SocialNetworksState extends State<SocialNetworks> {
   @override
   void initState() {
-    widget.controller.fetchSocialNetworks2();
+    widget.controller.fetchSocialNetworks();
     print('initState');
     print(widget.controller.socialNetworks.value.length);
 

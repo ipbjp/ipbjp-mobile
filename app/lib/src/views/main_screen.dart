@@ -46,7 +46,6 @@ class _MainScreen extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    controllerSocialNetwork.fetchSocialNetworks2();
     return Scaffold(
       appBar: AppBar(
         title: const Text('IPB - Jardim da Penha'),
