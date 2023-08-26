@@ -4,6 +4,8 @@ import 'package:ipbjp_mobile/src/widgets.dart';
 // import font awesome icons
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../provider.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -13,14 +15,13 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreen extends State<MainScreen> {
   int _selectedIndex = 0;
+
+  late ControllerSocialNetwork controllerSocialNetwork;
+
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Calendar(),
-    SocialNetworks(),
-    Donations(),
-  ];
-  ControllerSocialNetwork controllerSocialNetwork = ControllerSocialNetwork();
+
+  late List<Widget> _widgetOptions;
 
   void _onItemTapped(int index) {
     setState(() {
@@ -29,10 +30,23 @@ class _MainScreen extends State<MainScreen> {
   }
 
   //init state
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    controllerSocialNetwork = getIt<ControllerSocialNetwork>();
+    _widgetOptions = <Widget>[
+      Calendar(),
+      SocialNetworks(
+        controller: controllerSocialNetwork,
+      ),
+      Donations(),
+    ];
+  }
 
   @override
   Widget build(BuildContext context) {
-    controllerSocialNetwork.fetchSocialNetworks();
+    controllerSocialNetwork.fetchSocialNetworks2();
     return Scaffold(
       appBar: AppBar(
         title: const Text('IPB - Jardim da Penha'),
