@@ -58,10 +58,10 @@ class ControllerSocialNetwork {
 
       print("raw body: ${data}");
 
-      socialNetworks.value =
-          (jsonDecode(response.body) as List<Map<String, dynamic>>)
-              .map((item) => SocialNetwork.fromJson(item))
-              .toList();
+      // socialNetworks.value =
+      //     (jsonDecode(response.body) as List<Map<String, dynamic>>)
+      //         .map((item) => SocialNetwork.fromJson(item))
+      //         .toList();
     } catch (e) {
       print("Error: ");
       print(e.toString());

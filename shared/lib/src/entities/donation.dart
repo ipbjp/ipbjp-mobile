@@ -24,6 +24,7 @@ class Donation {
   Map<String, dynamic> toJson() => _$DonationToJson(this);
 }
 
+// TODO: Add more icons
 enum DonationIcon {
   @JsonValue(1)
   defaultIcon,
