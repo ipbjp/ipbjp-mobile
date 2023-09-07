@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="574d8f46-bec0-4e9c-81e2-f876f7e4ab62" name="Changes" comment="feat: implementação das primeiras entidades">
+      <change afterPath="$PROJECT_DIR$/backend/lib/library.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/lib/src/models/event.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectId" id="2TZOnCZiiQqGlsu09phVCt281PT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bruno/Projetos/Pessoal/ipbjp-mobile/shared/lib/src/entities&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shared/lib/src/entities" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="574d8f46-bec0-4e9c-81e2-f876f7e4ab62" name="Changes" comment="" />
+      <created>1691247300800</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691247300800</updated>
+    </task>
+    <task id="LOCAL-00001" summary="feat: commit inicial com configurações e inicialização do projeto">
+      <created>1691248062984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691248062984</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat+refactor: reestruturação do projeto, adição de projeto de biblioteca compartilhada &quot;shared&quot; e projeto do backend.">
+      <created>1693062944772</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693062944773</updated>
+    </task>
+    <task id="LOCAL-00003" summary="build: adição de bibliotecas para serialização e deserialização dos arquivos">
+      <created>1693072172747</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693072172747</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: implementação das primeiras entidades">
+      <created>1693072250075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693072250075</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: commit inicial com configurações e inicialização do projeto" />
+    <MESSAGE value="feat+refactor: reestruturação do projeto, adição de projeto de biblioteca compartilhada &quot;shared&quot; e projeto do backend." />
+    <MESSAGE value="build: adição de bibliotecas para serialização e deserialização dos arquivos" />
+    <MESSAGE value="feat: implementação das primeiras entidades" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implementação das primeiras entidades" />
+  </component>
+</project>

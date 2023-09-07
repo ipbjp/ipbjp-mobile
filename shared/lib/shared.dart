@@ -3,7 +3,7 @@
 /// More dartdocs go here.
 library;
 
-export 'src/entities/donation.dart';
-export 'src/entities/social_network.dart';
+export 'src/dtos.dart';
+export 'src/enums.dart';
 
 // TODO: Export any libraries intended for clients of this package.
