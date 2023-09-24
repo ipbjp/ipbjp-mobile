@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import '../controllers/controller_social_network.dart';
 import '../widgets.dart';
 
-class SocialNetworks extends StatefulWidget {
+class SocialNetworkList extends StatefulWidget {
   final ControllerSocialNetwork controller;
 
-  const SocialNetworks({super.key, required this.controller});
+  SocialNetworkList({super.key, required this.controller});
 
   @override
-  State<SocialNetworks> createState() => _SocialNetworksState();
+  State<SocialNetworkList> createState() => _SocialNetworkListState();
 }
 
-class _SocialNetworksState extends State<SocialNetworks> {
+class _SocialNetworkListState extends State<SocialNetworkList> {
   @override
   void initState() {
     widget.controller.fetchSocialNetworks();
@@ -32,7 +32,7 @@ class _SocialNetworksState extends State<SocialNetworks> {
               itemCount: socialNetworks.length,
               itemBuilder: (_, index) {
                 return SocialNetworkTile(
-                  icon: Icon(Icons.abc),
+                  icon: socialNetworks[index].icon,
                   address: socialNetworks[index].address,
                   label: socialNetworks[index].label,
                 );

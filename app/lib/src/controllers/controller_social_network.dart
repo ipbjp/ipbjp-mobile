@@ -4,7 +4,8 @@ import 'package:logger/logger.dart';
 import 'package:shared/shared.dart';
 
 class ControllerSocialNetwork {
-  ValueNotifier<List<SocialNetwork>> socialNetworks = ValueNotifier([]);
+  ValueNotifier<List<SocialNetworkCreationOrUpdateRequestDTO>> socialNetworks =
+      ValueNotifier([]);
   SocialNetworkRepository socialNetworkRepository = SocialNetworkRepository();
   Logger logger = Logger();
 

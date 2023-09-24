@@ -42,7 +42,8 @@ class SocialNetworkRepository {
   // }
 
   /// Método de acesso a json local
-  Future<List<SocialNetwork>> fetchLocalSocialNetworks() async {
+  Future<List<SocialNetworkCreationOrUpdateRequestDTO>>
+      fetchLocalSocialNetworks() async {
     logger.d('SocialNetworkRepository');
     try {
       // read local json file
@@ -56,7 +57,8 @@ class SocialNetworkRepository {
       logger.d("runtimeType: ${data.runtimeType}");
 
       return data
-          .map<SocialNetwork>((item) => SocialNetwork.fromJson(item))
+          .map<SocialNetworkCreationOrUpdateRequestDTO>(
+              (item) => SocialNetworkCreationOrUpdateRequestDTO.fromJson(item))
           .toList();
     } catch (e) {
       logger.e("Error SocialNetworkRepository: ");

@@ -37,7 +37,7 @@ class _MainScreen extends State<MainScreen> {
     controllerSocialNetwork = getIt<ControllerSocialNetwork>();
     _widgetOptions = <Widget>[
       Calendar(),
-      SocialNetworks(
+      SocialNetworkList(
         controller: controllerSocialNetwork,
       ),
       Donations(),
