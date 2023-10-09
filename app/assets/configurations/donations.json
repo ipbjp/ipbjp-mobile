@@ -1,0 +1,30 @@
+[
+  {
+  "name": "Obra da igreja",
+  "pix": "13.374.039/0001-10",
+  "description": "Nos ajude a concluir a reconstrução do templo!",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Link_pra_pagina_principal_da_Wikipedia-PT_em_codigo_QR_b.svg",
+  "icon":  1},
+  {
+    "name": "Missionário Augusto",
+    "pix": "13.374.039/0001-10",
+    "description": "Nos ajude a manter o missionário Augusto em seu trabalho!",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Link_pra_pagina_principal_da_Wikipedia-PT_em_codigo_QR_b.svg",
+    "icon":  2
+  },
+  {
+    "name": "Pastor Yago",
+    "pix": "13.374.039/0001-10",
+    "description": "Dê uma oferta para abençoar o pastor Yago!",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Link_pra_pagina_principal_da_Wikipedia-PT_em_codigo_QR_b.svg",
+    "icon":  4
+  },
+  {
+    "name": "Madrugada com carinho",
+    "pix": "13.374.039/0001-10",
+    "description": "Ajude a manter o projeto madrugada com carinho que alimenta!",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Link_pra_pagina_principal_da_Wikipedia-PT_em_codigo_QR_b.svg",
+    "icon":  3
+  }
+
+]

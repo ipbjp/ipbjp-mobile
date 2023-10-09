@@ -130,5 +130,9 @@ Map<String, dynamic> _$DonationCreationOrUpdateRequestDTOToJson(
     };
 
 const _$DonationIconEnumMap = {
-  DonationIcon.defaultIcon: 1,
+  DonationIcon.localChurch: 1,
+  DonationIcon.missionary: 2,
+  DonationIcon.socialProject: 3,
+  DonationIcon.visitingPreacher: 4,
+  DonationIcon.other: 5,
 };

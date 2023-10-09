@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
 
-import '../controllers/controller_social_network.dart';
-import '../widgets.dart';
+import 'package:ipbjp_mobile/controllers.dart';
+import 'package:ipbjp_mobile/widgets.dart';
+
+import 'package:ipbjp_mobile/provider.dart';
 
 class SocialNetworkList extends StatefulWidget {
-  final ControllerSocialNetwork controller;
 
-  SocialNetworkList({super.key, required this.controller});
+  const SocialNetworkList({super.key});
 
   @override
   State<SocialNetworkList> createState() => _SocialNetworkListState();
 }
 
 class _SocialNetworkListState extends State<SocialNetworkList> {
+  final SocialNetworkController socialNetworkController = getIt<SocialNetworkController>();
   @override
   void initState() {
-    widget.controller.fetchSocialNetworks();
-    print('initState');
-    print(widget.controller.socialNetworks.value.length);
-
+    socialNetworkController.fetchSocialNetworks();
     super.initState();
   }
 
@@ -26,7 +25,7 @@ class _SocialNetworkListState extends State<SocialNetworkList> {
   Widget build(BuildContext context) {
     return Scrollbar(
       child: ValueListenableBuilder(
-          valueListenable: widget.controller.socialNetworks,
+          valueListenable: socialNetworkController.socialNetworks,
           builder: (_, socialNetworks, __) {
             return ListView.builder(
               itemCount: socialNetworks.length,

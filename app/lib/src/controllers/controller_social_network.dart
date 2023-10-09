@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
-import 'package:ipbjp_mobile/src/repositories/social_network_repository.dart';
+import 'package:ipbjp_mobile/repositories.dart';
 import 'package:logger/logger.dart';
 import 'package:shared/shared.dart';
 
-class ControllerSocialNetwork {
+class SocialNetworkController {
   ValueNotifier<List<SocialNetworkCreationOrUpdateRequestDTO>> socialNetworks =
       ValueNotifier([]);
   SocialNetworkRepository socialNetworkRepository = SocialNetworkRepository();
