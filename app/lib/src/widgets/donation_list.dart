@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ipbjp_mobile/repositories.dart';
 import 'package:logger/logger.dart';
 import 'package:ipbjp_mobile/widgets.dart';
 import 'package:ipbjp_mobile/provider.dart';
@@ -18,6 +17,7 @@ class _DonationListState extends State<DonationList> {
   final DonationController donationController = getIt<DonationController>();
   final Logger logger = Logger();
   late List<DonationCreationOrUpdateRequestDTO> donationList;
+
   @override
   void initState() {
     initDonationList();

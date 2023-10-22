@@ -47,14 +47,10 @@ class SocialNetworkRepository {
     logger.d('SocialNetworkRepository');
     try {
       // read local json file
-      final reponse = await rootBundle
+      final response = await rootBundle
           .loadString('assets/configurations/social_networks.json');
 
-      logger.d("raw body: ${reponse}");
-
-      var data = jsonDecode(reponse);
-      logger.d("raw body2: ${data}");
-      logger.d("runtimeType: ${data.runtimeType}");
+      var data = jsonDecode(response);
 
       return data
           .map<SocialNetworkCreationOrUpdateRequestDTO>(

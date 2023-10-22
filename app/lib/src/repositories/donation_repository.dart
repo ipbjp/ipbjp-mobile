@@ -22,13 +22,9 @@ class DonationRepository {
     logger.d('DonationsRepository');
     try {
       // read local json file
-      final reponse = await rootBundle.loadString(donationsUrl);
+      final response = await rootBundle.loadString(donationsUrl);
 
-      // logger.d("raw body: ${reponse}");
-
-      var data = jsonDecode(reponse);
-      logger.d("raw body2: ${data}");
-      // logger.d("runtimeType: ${data.runtimeType}");
+      var data = jsonDecode(response);
 
       return data
           .map<DonationCreationOrUpdateRequestDTO>(

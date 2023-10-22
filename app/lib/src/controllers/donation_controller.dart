@@ -4,7 +4,7 @@ import 'package:logger/logger.dart';
 import 'package:shared/shared.dart';
 
 class DonationController extends ChangeNotifier {
-  late List<DonationCreationOrUpdateRequestDTO> donationsList;
+  late List<DonationCreationOrUpdateRequestDTO> donationsList = [];
   DonationRepository donationRepository = DonationRepository();
   Logger logger = Logger();
 

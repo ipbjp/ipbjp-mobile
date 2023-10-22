@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ipbjp_mobile/src/controllers/controller_social_network.dart';
+import 'package:ipbjp_mobile/src/controllers/social_network_controller.dart';
 import 'package:ipbjp_mobile/widgets.dart';
 // import font awesome icons
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -18,9 +18,6 @@ class _MainScreen extends State<MainScreen> {
 
   late SocialNetworkController controllerSocialNetwork;
 
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-
   late List<Widget> _widgetOptions;
 
   void _onItemTapped(int index) {
@@ -36,7 +33,7 @@ class _MainScreen extends State<MainScreen> {
     super.initState();
     controllerSocialNetwork = getIt<SocialNetworkController>();
     _widgetOptions = <Widget>[
-      Calendar(),
+      const EventList(),
       const SocialNetworkList(),
       const DonationList(),
     ];

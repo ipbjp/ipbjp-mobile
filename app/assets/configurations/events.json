@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Forum de Cosmovisão Cristã",
+    "address": "Online",
+    "startDate": "2021-10-01T00:00:00.000Z",
+    "endDate": "2021-10-31T00:00:00.000Z",
+
+    "description": "O Fórum de Cosmovisão Cristã é um evento que tem como objetivo promover a reflexão e o debate sobre a cosmovisão cristã e sua aplicação em diferentes áreas da vida.",
+    "imageUrl": "https://images.sympla.com.br/64231738e313f-lg.png",
+    "link": "https://forumcosmovisaocrista.com.br/"
+  },
+  {
+    "name": "Culto de Páscoa",
+    "address": "Av. Dra. Ruth Cardoso, 6151 - Pinheiros, São Paulo - SP, 05463-030",
+    "startDate": "2021-10-03T00:00:00.000Z",
+    "endDate": "2021-10-03T00:00:00.000Z",
+
+    "description": "Venha celebrar conosco o culto de Páscoa. O culto será realizado no dia 03 de outubro, às 10h, na Igreja Presbiteriana de Pinheiros.",
+    "imageUrl": "https://storage.googleapis.com/media_files_prod/uploads/event/428143/event-c62aa00d8786c5da735e0d4c8a02f074.jpg",
+    "link": "https://www.ippinheiros.org.br/"
+  },
+  {
+    "name": "Feira missionária",
+    "address": "Av. Dr. Cardoso de Melo, 1460 - Vila Olímpia, São Paulo - SP, 04548-005",
+    "startDate": "2021-10-03T00:00:00.000Z",
+
+    "description": "Venha celebrar conosco o encerramento da Semana de Missões 2021. A feira missionária será realizada no dia 03 de outubro, às 11h30, no estacionamento da Igreja Presbiteriana de Pinheiros.",
+
+    "link": "https://www.ippinheiros.org.br/"
+  }
+]
