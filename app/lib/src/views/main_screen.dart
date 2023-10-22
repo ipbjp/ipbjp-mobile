@@ -43,6 +43,8 @@ class _MainScreen extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        /// color #165131
+        backgroundColor: const Color(0xFF165131),
         title: const Text('IPB - Jardim da Penha'),
         leading: Padding( padding: EdgeInsets.only(left: 10, bottom: 4,),child: SizedBox( height: 20, child:Image.asset('assets/images/logo_ipb.png',))),
       ),
