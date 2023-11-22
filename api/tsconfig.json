@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": ["es2017", "dom", "es2019.array", "es2020.String"],
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "allowJs": true,
+    "checkJs": true,
+    "inlineSourceMap": true,
+    "outDir": "./dist",
+    "typeRoots": ["node_modules/@types", "./custom_typings"],
+    "types": ["jest", "node"],
+    "skipLibCheck": true
+  },
+  "include": ["app", "config", "lib"],
+  "exclude": ["node_modules"]
+}
