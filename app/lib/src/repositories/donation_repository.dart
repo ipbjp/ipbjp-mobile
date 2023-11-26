@@ -19,7 +19,7 @@ class DonationRepository {
 
   /// Método de requisição a um json local
   Future<List<DonationCreationOrUpdateRequestDTO>> fetchLocalDonations() async {
-    logger.d('DonationsRepository');
+    // logger.d('DonationsRepository');
     try {
       // read local json file
       final response = await rootBundle.loadString(donationsUrl);

@@ -38,6 +38,7 @@ class _DonationListState extends State<DonationList> {
   Widget build(BuildContext context) {
     return Scrollbar(
       /// Listview for the donation list
+      /// add button on the following component
       child: ListView.builder(
         itemCount: donationController.getDonations().length,
         itemBuilder: (_, index) {

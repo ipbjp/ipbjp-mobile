@@ -7,7 +7,12 @@ void main() {
   runApp(MaterialApp(
     title: 'Flutter Demo',
     theme: ThemeData(
-      colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      useMaterial3: true,
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: const Color(0xFF165131),
+        brightness: Brightness.light,
+      ),
+      // Define the default brightness and colors.
     ),
     home: const MainScreen(),
   ));

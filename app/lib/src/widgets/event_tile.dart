@@ -9,14 +9,12 @@ class EventTile extends StatelessWidget {
   /// simple function to format date
   /// from yyyy-MM-ddTHH:mm:ss to dd/MM/yyyy HH:mm:ss
   String formatDateToBrazilianStandardWithTime(DateTime dateTime) {
-    return DateFormat('dd/MM/yyyy HH:mm')
-        .format(dateTime).toString();
+    return DateFormat('dd/MM/yyyy HH:mm').format(dateTime).toString();
   }
 
- /// function to convert form from DateTime object to string
+  /// function to convert form from DateTime object to string
   String formatDateToBrazilianStandard(DateTime dateTime) {
-    return DateFormat('dd/MM/yyyy')
-        .format(dateTime).toString();
+    return DateFormat('dd/MM/yyyy').format(dateTime).toString();
   }
 
   /// Function that open a dialog to show more details about the event
@@ -54,9 +52,6 @@ class EventTile extends StatelessWidget {
                   color: Colors.grey[700],
                 ),
               ),
-
-
-
             ],
           ),
           actions: [
@@ -75,6 +70,7 @@ class EventTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.white,
       // Set the shape of the card using a rounded rectangle border with a 8 pixel radius
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
@@ -132,12 +128,11 @@ class EventTile extends StatelessWidget {
                         "Mais detalhes",
                         style: TextStyle(color: Colors.black),
                       ),
-                      onPressed: (){
+                      onPressed: () {
                         _showMoreDetails(context);
                       },
                     ),
                     // Add a text button labeled "EXPLORE" with transparent foreground color and an accent color for the text
-
                   ],
                 ),
               ],
@@ -150,5 +145,3 @@ class EventTile extends StatelessWidget {
     );
   }
 }
-
-

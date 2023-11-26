@@ -52,6 +52,7 @@ class SocialNetworkTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.white,
       child: ListTile(
         /// switch case that returns a icon based on icon enum value
         leading: _getIcon(icon!),
