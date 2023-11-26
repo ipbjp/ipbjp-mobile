@@ -1,3 +1,1 @@
 # ipbjp-mobile
-
-test
