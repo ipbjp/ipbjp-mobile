@@ -3,6 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "esModuleInterop": true,
     "target": "es2015",
     "module": "commonjs",
     "lib": ["es2017", "dom", "es2019.array", "es2020.String"],

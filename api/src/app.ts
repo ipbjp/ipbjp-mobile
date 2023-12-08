@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import * as express from "express";
+import express from "express";
 import * as bodyParser from "body-parser";
 import cors from "cors";
 import mongoose from "mongoose";
