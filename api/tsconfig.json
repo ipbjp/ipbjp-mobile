@@ -20,6 +20,6 @@
     "types": ["jest", "node"],
     "skipLibCheck": true
   },
-  "include": ["src", "config", "lib"],
+  "include": ["src", "config", "lib", "/api/*.ts"],
   "exclude": ["node_modules"]
 }
