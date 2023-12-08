@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import * as express from "express";
 import * as bodyParser from "body-parser";
-import * as cors from "cors";
+import cors from "cors";
 import mongoose from "mongoose";
 import * as dotenv from "dotenv";
 import "express-async-errors";
