@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:logger/logger.dart';
+
 import 'package:ipbjp_mobile/widgets.dart';
 import 'package:ipbjp_mobile/provider.dart';
 import 'package:ipbjp_mobile/controllers.dart';
 import 'package:shared/shared.dart';
 
 class EventList extends StatefulWidget {
-
   const EventList({super.key});
 
   @override
@@ -15,7 +14,7 @@ class EventList extends StatefulWidget {
 
 class _EventListState extends State<EventList> {
   final EventController eventController = getIt<EventController>();
-  final Logger logger = Logger();
+
   late List<EventCreationOrUpdateRequestDTO> eventList;
 
   @override
@@ -35,12 +34,9 @@ class _EventListState extends State<EventList> {
   @override
   Widget build(BuildContext context) {
     return Scrollbar(
-
       /// Listview for the event list
       child: ListView.builder(
-        itemCount: eventController
-            .getEvents()
-            .length,
+        itemCount: eventController.getEvents().length,
         itemBuilder: (_, index) {
           return EventTile(
             event: eventController.getEvents()[index],
@@ -49,5 +45,4 @@ class _EventListState extends State<EventList> {
       ),
     );
   }
-
 }

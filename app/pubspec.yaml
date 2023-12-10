@@ -75,6 +75,7 @@ flutter:
     - assets/images/logo_ipbjp.png
     - assets/images/logo_ipb.png
     - assets/images/qr_code.png
+    - assets/images/ipb_logo_colorido.png
     - assets/configurations/social_networks.json
     - assets/configurations/donations.json
     - assets/configurations/events.json

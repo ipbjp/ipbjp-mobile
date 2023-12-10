@@ -3,7 +3,7 @@
 /// This screen is used to create a donation.
 
 import 'package:flutter/material.dart';
-import 'package:logger/logger.dart';
+
 import 'package:ipbjp_mobile/widgets.dart';
 import 'package:ipbjp_mobile/provider.dart';
 import 'package:ipbjp_mobile/controllers.dart';
@@ -18,7 +18,7 @@ class DonationCreateScreen extends StatefulWidget {
 
 class _DonationCreateScreenState extends State<DonationCreateScreen> {
   final DonationController donationController = getIt<DonationController>();
-  final Logger logger = Logger();
+
   late List<DonationCreationOrUpdateRequestDTO> donationList;
 
   @override

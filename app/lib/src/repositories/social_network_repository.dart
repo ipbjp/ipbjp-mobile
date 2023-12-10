@@ -2,7 +2,6 @@
 ///
 
 import 'dart:convert';
-import 'package:logger/logger.dart';
 
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
@@ -19,7 +18,6 @@ class SocialNetworkRepository {
       "assets/configurations/social_networks.json";
 
   final http.Client httpClient = http.Client();
-  final Logger logger = Logger();
 
   /// Método que realiza a requisição da API de acesso a rede social.
   ///
@@ -44,7 +42,7 @@ class SocialNetworkRepository {
   /// Método de acesso a json local
   Future<List<SocialNetworkCreationOrUpdateRequestDTO>>
       fetchLocalSocialNetworks() async {
-    logger.d('SocialNetworkRepository');
+    print('SocialNetworkRepository');
     try {
       // read local json file
       final response = await rootBundle
@@ -57,8 +55,8 @@ class SocialNetworkRepository {
               (item) => SocialNetworkCreationOrUpdateRequestDTO.fromJson(item))
           .toList();
     } catch (e) {
-      logger.e("Error SocialNetworkRepository: ");
-      logger.e(e.toString());
+      print("Error SocialNetworkRepository: ");
+      print(e.toString());
       throw Exception(e);
     }
   }

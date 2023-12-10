@@ -3,7 +3,6 @@ import 'package:ipbjp_mobile/src/controllers/social_network_controller.dart';
 import 'package:ipbjp_mobile/widgets.dart';
 // import font awesome icons
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:logger/logger.dart';
 
 import '../../provider.dart';
 import 'donation_create_screen.dart';
@@ -17,7 +16,6 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreen extends State<MainScreen> {
   int _selectedIndex = 0;
-  final Logger logger = Logger();
 
   late SocialNetworkController controllerSocialNetwork;
 
@@ -91,8 +89,8 @@ class _MainScreen extends State<MainScreen> {
           foregroundColor: Colors.white,
           onPressed: () {
             /// logger msg to test
-            logger.d('MainScreen - floatingActionButton - onPressed');
-            logger.d(_selectedIndex);
+            print('MainScreen - floatingActionButton - onPressed');
+            print(_selectedIndex);
             switch (_selectedIndex) {
               case 0:
                 break;

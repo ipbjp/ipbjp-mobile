@@ -81,12 +81,22 @@ class EventTile extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Image.network(
-            event.imageUrl ?? "https://www.ipb.org.br/img/logo_ipb.png",
-            height: 160,
-            width: double.infinity,
-            fit: BoxFit.cover,
-          ),
+          // Add the image to the card as a background image if the image is not null
+          if (event.imageUrl != null)
+            Image.network(
+              event.imageUrl!,
+              height: 160,
+              width: 300,
+              fit: BoxFit.cover,
+            )
+          else
+            Center(
+              child: SizedBox(
+                  height: 160,
+                  child: Image.asset(
+                    'assets/images/ipb_logo_colorido.png',
+                  )),
+            ),
 
           // Add a container with padding that contains the card's title, text, and buttons
           Container(

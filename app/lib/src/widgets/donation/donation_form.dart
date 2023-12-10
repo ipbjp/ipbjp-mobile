@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:logger/logger.dart';
+
 import 'package:ipbjp_mobile/widgets.dart';
 import 'package:ipbjp_mobile/provider.dart';
 import 'package:ipbjp_mobile/controllers.dart';

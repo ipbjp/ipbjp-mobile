@@ -1,7 +1,6 @@
 /// Repositório que gerencia as requisições da API de acesso a doações.
 
 import 'dart:convert';
-import 'package:logger/logger.dart';
 
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
@@ -15,11 +14,10 @@ class DonationRepository {
   /// URL da API de acesso a doações.
   static const String donationsUrl = "assets/configurations/donations.json";
   final http.Client httpClient = http.Client();
-  final Logger logger = Logger();
 
   /// Método de requisição a um json local
   Future<List<DonationCreationOrUpdateRequestDTO>> fetchLocalDonations() async {
-    // logger.d('DonationsRepository');
+    // print('DonationsRepository');
     try {
       // read local json file
       final response = await rootBundle.loadString(donationsUrl);
@@ -31,8 +29,8 @@ class DonationRepository {
               (item) => DonationCreationOrUpdateRequestDTO.fromJson(item))
           .toList();
     } catch (e) {
-      logger.e("Error: ");
-      logger.e(e.toString());
+      print("Error: ");
+      print(e.toString());
       return [];
     }
   }
